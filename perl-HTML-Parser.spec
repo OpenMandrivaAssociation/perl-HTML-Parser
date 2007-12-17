@@ -11,7 +11,6 @@ Source: 	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/HTML/%{module}-%{version}
 Requires: 	perl-HTML-Tagset >= 3.03
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 HTML::Parser module for Perl to parse and extract information from
