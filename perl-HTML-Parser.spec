@@ -2,8 +2,8 @@
 
 Summary: 	Perl module to parse HTML documents
 Name: 		perl-%{module}
-Version: 	3.56
-Release: 	%mkrel 3
+Version: 	3.58
+Release: 	%mkrel 1
 License: 	GPL or Artistic
 Group: 		Development/Perl
 URL: 		http://search.cpan.org/dist/%{module}/
