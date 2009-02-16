@@ -1,13 +1,14 @@
 %define	module	HTML-Parser
+%define Werror_cflags %nil
 
 Summary: 	Perl module to parse HTML documents
 Name: 		perl-%{module}
-Version: 	3.59
+Version: 	3.60
 Release: 	%mkrel 1
 License: 	GPL or Artistic
 Group: 		Development/Perl
 URL: 		http://search.cpan.org/dist/%{module}/
-Source: 	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/HTML/%{module}-%{version}.tar.bz2
+Source:     http://www.cpan.org/modules/by-module/HTML/%{module}-%{version}.tar.gz
 Requires: 	perl-HTML-Tagset >= 3.03
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
