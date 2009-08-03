@@ -16,7 +16,7 @@ Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstre
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
-Requires: 	perl-HTML-Tagset >= 3.300.0
+Requires: 	perl-HTML-Tagset >= 3.30.0
 
 %description
 HTML::Parser module for Perl to parse and extract information from
