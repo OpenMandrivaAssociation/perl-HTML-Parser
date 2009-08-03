@@ -1,26 +1,29 @@
-%define	module	HTML-Parser
+%define	upstream_name	 HTML-Parser
+%define	upstream_version 3.61
+
 %define Werror_cflags %nil
 
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary: 	Perl module to parse HTML documents
-Name: 		perl-%{module}
-Version: 	3.61
-Release: 	%mkrel 3
-License: 	GPL or Artistic
+License: 	GPL+ or Artistic
 Group: 		Development/Perl
-URL: 		http://search.cpan.org/dist/%{module}/
-Source:     http://www.cpan.org/modules/by-module/HTML/%{module}-%{version}.tar.gz
-Requires: 	perl-HTML-Tagset >= 3.03
+Url: 		http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
+Requires: 	perl-HTML-Tagset >= 3.300.0
 
 %description
 HTML::Parser module for Perl to parse and extract information from
 HTML documents.
 
 %prep
-
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 # compile with default options (prompt() checks for STDIN being a terminal).
@@ -44,5 +47,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/auto/HTML
 %{perl_vendorarch}/HTML
 %{_mandir}/*/*
-
-
