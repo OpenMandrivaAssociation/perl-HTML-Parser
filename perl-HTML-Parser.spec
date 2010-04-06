@@ -1,11 +1,11 @@
 %define	upstream_name	 HTML-Parser
-%define upstream_version 3.64
+%define upstream_version 3.65
 
 %define Werror_cflags %nil
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary: 	Perl module to parse HTML documents
 License: 	GPL+ or Artistic
