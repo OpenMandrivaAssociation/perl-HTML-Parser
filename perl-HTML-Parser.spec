@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 4
 
 Summary: 	Perl module to parse HTML documents
 License: 	GPL+ or Artistic
