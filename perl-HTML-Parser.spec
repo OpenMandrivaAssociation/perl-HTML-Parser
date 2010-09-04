@@ -1,5 +1,5 @@
 %define	upstream_name	 HTML-Parser
-%define upstream_version 3.67
+%define upstream_version 3.68
 
 %define Werror_cflags %nil
 
