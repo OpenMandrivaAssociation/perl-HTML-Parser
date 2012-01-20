@@ -17,6 +17,8 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 Requires: 	perl-HTML-Tagset >= 3.30.0
+# temporary dep due to the perl-5.14 bump
+BuildRequires:  perl-List-MoreUtils >= 0.320.0-4
 
 %description
 HTML::Parser module for Perl to parse and extract information from
