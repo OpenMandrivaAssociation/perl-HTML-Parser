@@ -1,33 +1,33 @@
-%define	upstream_name	 HTML-Parser
-%define upstream_version 3.68
+%define	modname	HTML-Parser
+%define	modver	3.68
 
-%define Werror_cflags %nil
+%define Werror_cflags %{nil}
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    6
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
+Release:	7
 
 Summary:	Perl module to parse HTML documents
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url: 		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}/
+Source0:	http://www.cpan.org/modules/by-module/HTML/%{modname}-%{modver}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
-Requires: 	perl-HTML-Tagset >= 3.30.0
+Requires:	perl-HTML-Tagset >= 3.30.0
 
 %description
 HTML::Parser module for Perl to parse and extract information from
 HTML documents.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{modname}-%{modver}
 
 %build
 # compile with default options (prompt() checks for STDIN being a terminal).
 # yes to not ask for automate rebuild
-yes | %__perl Makefile.PL INSTALLDIRS=vendor
+yes | perl Makefile.PL INSTALLDIRS=vendor
 %make OPTIMIZE="%{optflags}"
 
 %check
@@ -42,8 +42,11 @@ yes | %__perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorarch}/HTML
 %{_mandir}/*/*
 
-
 %changelog
+* Fri Dec 21 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 3.680.0-7
+- rebuild for new perl-5.16.2
+- cleanups
+
 * Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 3.680.0-5mdv2012.0
 + Revision: 765304
 - rebuilt for perl-5.14.2
