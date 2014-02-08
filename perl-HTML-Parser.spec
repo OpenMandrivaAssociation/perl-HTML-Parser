@@ -5,7 +5,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	8
+Release:	9
 
 Summary:	Perl module to parse HTML documents
 License:	GPL+ or Artistic
