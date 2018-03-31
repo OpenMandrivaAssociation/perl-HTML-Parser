@@ -1,11 +1,11 @@
 %define Werror_cflags %{nil}
 %define	modname	HTML-Parser
-%define modver 3.71
+%define modver 3.72
 
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	7
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
