@@ -12,6 +12,8 @@ Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Parser-%{modver}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
+# For make test
+BuildRequires:	perl(Test::More)
 Requires:	perl-HTML-Tagset >= 3.30.0
 
 %description
