@@ -5,10 +5,10 @@
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		http://metacpan.org/pod/HTML::Parser
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Parser-%{modver}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
