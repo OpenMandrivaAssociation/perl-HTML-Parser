@@ -1,6 +1,6 @@
 %define Werror_cflags %{nil}
 %define	modname	HTML-Parser
-%define modver 3.76
+%define modver 3.78
 
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
