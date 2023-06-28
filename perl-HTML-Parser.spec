@@ -1,15 +1,14 @@
 %define Werror_cflags %{nil}
 %define	modname	HTML-Parser
-%define modver 3.78
 
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	3.81
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/HTML::Parser
-Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Parser-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Parser-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
 # For make test
@@ -21,7 +20,7 @@ HTML::Parser module for Perl to parse and extract information from
 HTML documents.
 
 %prep
-%autosetup -p1 -n %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 # compile with default options (prompt() checks for STDIN being a terminal).
