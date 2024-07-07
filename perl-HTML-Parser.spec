@@ -3,7 +3,7 @@
 
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
-Version:	3.81
+Version:	3.82
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
