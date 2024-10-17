@@ -7,7 +7,7 @@ Version:	3.83
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/HTML::Parser
+Url:		https://metacpan.org/pod/HTML::Parser
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Parser-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
