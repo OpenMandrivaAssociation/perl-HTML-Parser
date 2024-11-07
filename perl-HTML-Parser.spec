@@ -4,7 +4,7 @@
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
 Version:	3.83
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/HTML::Parser
@@ -13,7 +13,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
 # For make test
 BuildRequires:	perl(Test::More)
-Requires:	perl-HTML-Tagset >= 3.30.0
+Requires:	perl-HTML-Tagset
 # FIXME bogus workaround for perl versioning madness
 Provides:	perl(HTML::Parser) = %{version}0.0
 
@@ -41,5 +41,3 @@ yes | perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorarch}/auto/HTML
 %{perl_vendorarch}/HTML
 %{_mandir}/man3/*
-
-
