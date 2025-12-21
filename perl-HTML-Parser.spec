@@ -9,6 +9,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/HTML::Parser
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Parser-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Tagset
 # For make test
