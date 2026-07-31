@@ -3,8 +3,8 @@
 
 Summary:	Perl module to parse HTML documents
 Name:		perl-%{modname}
-Version:	3.83
-Release:	5
+Version:	3.85
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/HTML::Parser
@@ -23,7 +23,7 @@ HTML::Parser module for Perl to parse and extract information from
 HTML documents.
 
 %prep
-%autosetup -p1 -n %{modname}-%{version}
+%autosetup -p1 -n HTML-Parser-3.85
 
 %build
 # compile with default options (prompt() checks for STDIN being a terminal).
